@@ -1,4 +1,4 @@
-﻿namespace Sol_Puntoventa.Presentacion
+﻿namespace Sol_PuntoVenta.Presentacion
 {
     partial class Frm_Punto_Venta
     {
@@ -29,249 +29,223 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Punto_Venta));
             this.Tbc_principal = new System.Windows.Forms.TabControl();
-            this.Consultas = new System.Windows.Forms.TabPage();
-            this.Mantenimiento = new System.Windows.Forms.TabPage();
-            this.Dgv_Listado = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Lbl_totalregistros = new System.Windows.Forms.Label();
+            this.Btn_buscar = new System.Windows.Forms.Button();
             this.Txt_buscar = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Txt_descripcion = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Dgv_Listado = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Btn_retornar = new System.Windows.Forms.Button();
+            this.Btn_guardar = new System.Windows.Forms.Button();
             this.Btn_cancelar = new System.Windows.Forms.Button();
-            this.Btn_Guardar = new System.Windows.Forms.Button();
-            this.Btn_Retomar = new System.Windows.Forms.Button();
+            this.Txt_descripcion = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Btn_nuevo = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Btn_actualizar = new System.Windows.Forms.Button();
             this.Btn_eliminar = new System.Windows.Forms.Button();
             this.Btn_reporte = new System.Windows.Forms.Button();
             this.Btn_salir = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.Pnl_titulo = new System.Windows.Forms.Panel();
+            this.Pnl_titulo_form = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.Lbl_totalregistro = new System.Windows.Forms.Label();
             this.Tbc_principal.SuspendLayout();
-            this.Consultas.SuspendLayout();
-            this.Mantenimiento.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).BeginInit();
-            this.Pnl_titulo.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.Pnl_titulo_form.SuspendLayout();
             this.SuspendLayout();
             // 
             // Tbc_principal
             // 
-            this.Tbc_principal.Controls.Add(this.Consultas);
-            this.Tbc_principal.Controls.Add(this.Mantenimiento);
+            this.Tbc_principal.Controls.Add(this.tabPage1);
+            this.Tbc_principal.Controls.Add(this.tabPage2);
             this.Tbc_principal.ItemSize = new System.Drawing.Size(100, 30);
-            this.Tbc_principal.Location = new System.Drawing.Point(12, 47);
+            this.Tbc_principal.Location = new System.Drawing.Point(12, 52);
             this.Tbc_principal.Name = "Tbc_principal";
             this.Tbc_principal.SelectedIndex = 0;
-            this.Tbc_principal.Size = new System.Drawing.Size(808, 434);
+            this.Tbc_principal.Size = new System.Drawing.Size(696, 358);
             this.Tbc_principal.TabIndex = 0;
             // 
-            // Consultas
+            // tabPage1
             // 
-            this.Consultas.Controls.Add(this.Lbl_totalregistro);
-            this.Consultas.Controls.Add(this.button1);
-            this.Consultas.Controls.Add(this.Txt_buscar);
-            this.Consultas.Controls.Add(this.label1);
-            this.Consultas.Controls.Add(this.Dgv_Listado);
-            this.Consultas.Location = new System.Drawing.Point(4, 34);
-            this.Consultas.Name = "Consultas";
-            this.Consultas.Padding = new System.Windows.Forms.Padding(3);
-            this.Consultas.Size = new System.Drawing.Size(800, 396);
-            this.Consultas.TabIndex = 0;
-            this.Consultas.Text = "tabPage1";
-            this.Consultas.UseVisualStyleBackColor = true;
-            this.Consultas.Click += new System.EventHandler(this.tabPage1_Click);
+            this.tabPage1.Controls.Add(this.Lbl_totalregistros);
+            this.tabPage1.Controls.Add(this.Btn_buscar);
+            this.tabPage1.Controls.Add(this.Txt_buscar);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.Dgv_Listado);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(688, 320);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Consultas";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // Mantenimiento
+            // Lbl_totalregistros
             // 
-            this.Mantenimiento.Controls.Add(this.Btn_Retomar);
-            this.Mantenimiento.Controls.Add(this.Btn_Guardar);
-            this.Mantenimiento.Controls.Add(this.Btn_cancelar);
-            this.Mantenimiento.Controls.Add(this.Txt_descripcion);
-            this.Mantenimiento.Controls.Add(this.label2);
-            this.Mantenimiento.Location = new System.Drawing.Point(4, 34);
-            this.Mantenimiento.Name = "Mantenimiento";
-            this.Mantenimiento.Padding = new System.Windows.Forms.Padding(3);
-            this.Mantenimiento.Size = new System.Drawing.Size(800, 396);
-            this.Mantenimiento.TabIndex = 1;
-            this.Mantenimiento.Text = "tabPage2";
-            this.Mantenimiento.UseVisualStyleBackColor = true;
+            this.Lbl_totalregistros.AutoSize = true;
+            this.Lbl_totalregistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_totalregistros.ForeColor = System.Drawing.Color.DimGray;
+            this.Lbl_totalregistros.Location = new System.Drawing.Point(393, 277);
+            this.Lbl_totalregistros.Name = "Lbl_totalregistros";
+            this.Lbl_totalregistros.Size = new System.Drawing.Size(103, 13);
+            this.Lbl_totalregistros.TabIndex = 4;
+            this.Lbl_totalregistros.Text = "Total registros: 0";
+            this.Lbl_totalregistros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Dgv_Listado
+            // Btn_buscar
             // 
-            this.Dgv_Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Listado.Location = new System.Drawing.Point(27, 108);
-            this.Dgv_Listado.Name = "Dgv_Listado";
-            this.Dgv_Listado.Size = new System.Drawing.Size(482, 171);
-            this.Dgv_Listado.TabIndex = 0;
+            this.Btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(105)))), ((int)(((byte)(141)))));
+            this.Btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_buscar.ForeColor = System.Drawing.Color.White;
+            this.Btn_buscar.Location = new System.Drawing.Point(295, 35);
+            this.Btn_buscar.Name = "Btn_buscar";
+            this.Btn_buscar.Size = new System.Drawing.Size(80, 27);
+            this.Btn_buscar.TabIndex = 3;
+            this.Btn_buscar.Text = "Buscar";
+            this.Btn_buscar.UseVisualStyleBackColor = false;
+            this.Btn_buscar.Click += new System.EventHandler(this.Btn_buscar_Click);
+            // 
+            // Txt_buscar
+            // 
+            this.Txt_buscar.Location = new System.Drawing.Point(63, 38);
+            this.Txt_buscar.Name = "Txt_buscar";
+            this.Txt_buscar.Size = new System.Drawing.Size(226, 20);
+            this.Txt_buscar.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 56);
+            this.label1.Location = new System.Drawing.Point(14, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Buscar:";
             // 
-            // Txt_buscar
+            // Dgv_Listado
             // 
-            this.Txt_buscar.Location = new System.Drawing.Point(112, 55);
-            this.Txt_buscar.Name = "Txt_buscar";
-            this.Txt_buscar.Size = new System.Drawing.Size(184, 20);
-            this.Txt_buscar.TabIndex = 2;
-            this.Txt_buscar.TextChanged += new System.EventHandler(this.Txt_buscar_TextChanged);
+            this.Dgv_Listado.AllowUserToAddRows = false;
+            this.Dgv_Listado.AllowUserToDeleteRows = false;
+            this.Dgv_Listado.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightCyan;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.Dgv_Listado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Dgv_Listado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Dgv_Listado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(145)))), ((int)(((byte)(194)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_Listado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Dgv_Listado.ColumnHeadersHeight = 35;
+            this.Dgv_Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.Dgv_Listado.EnableHeadersVisualStyles = false;
+            this.Dgv_Listado.Location = new System.Drawing.Point(15, 68);
+            this.Dgv_Listado.Name = "Dgv_Listado";
+            this.Dgv_Listado.ReadOnly = true;
+            this.Dgv_Listado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Dgv_Listado.Size = new System.Drawing.Size(481, 195);
+            this.Dgv_Listado.TabIndex = 0;
+            this.Dgv_Listado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Listado_CellDoubleClick);
             // 
-            // button1
+            // tabPage2
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(161)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(320, 55);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 27);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.tabPage2.Controls.Add(this.Btn_retornar);
+            this.tabPage2.Controls.Add(this.Btn_guardar);
+            this.tabPage2.Controls.Add(this.Btn_cancelar);
+            this.tabPage2.Controls.Add(this.Txt_descripcion);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(688, 320);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mantenimiento";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // Btn_retornar
+            // 
+            this.Btn_retornar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(153)))), ((int)(((byte)(117)))));
+            this.Btn_retornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_retornar.ForeColor = System.Drawing.Color.White;
+            this.Btn_retornar.Location = new System.Drawing.Point(293, 97);
+            this.Btn_retornar.Name = "Btn_retornar";
+            this.Btn_retornar.Size = new System.Drawing.Size(80, 27);
+            this.Btn_retornar.TabIndex = 6;
+            this.Btn_retornar.Text = "Retornar";
+            this.Btn_retornar.UseVisualStyleBackColor = false;
+            this.Btn_retornar.Visible = false;
+            this.Btn_retornar.Click += new System.EventHandler(this.Btn_retornar_Click);
+            // 
+            // Btn_guardar
+            // 
+            this.Btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(105)))), ((int)(((byte)(141)))));
+            this.Btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_guardar.ForeColor = System.Drawing.Color.White;
+            this.Btn_guardar.Location = new System.Drawing.Point(207, 97);
+            this.Btn_guardar.Name = "Btn_guardar";
+            this.Btn_guardar.Size = new System.Drawing.Size(80, 27);
+            this.Btn_guardar.TabIndex = 5;
+            this.Btn_guardar.Text = "Guardar";
+            this.Btn_guardar.UseVisualStyleBackColor = false;
+            this.Btn_guardar.Visible = false;
+            this.Btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
+            // 
+            // Btn_cancelar
+            // 
+            this.Btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.Btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_cancelar.ForeColor = System.Drawing.Color.White;
+            this.Btn_cancelar.Location = new System.Drawing.Point(121, 97);
+            this.Btn_cancelar.Name = "Btn_cancelar";
+            this.Btn_cancelar.Size = new System.Drawing.Size(80, 27);
+            this.Btn_cancelar.TabIndex = 4;
+            this.Btn_cancelar.Text = "Cancelar";
+            this.Btn_cancelar.UseVisualStyleBackColor = false;
+            this.Btn_cancelar.Visible = false;
+            this.Btn_cancelar.Click += new System.EventHandler(this.Btn_cancelar_Click);
+            // 
+            // Txt_descripcion
+            // 
+            this.Txt_descripcion.Location = new System.Drawing.Point(120, 62);
+            this.Txt_descripcion.Name = "Txt_descripcion";
+            this.Txt_descripcion.ReadOnly = true;
+            this.Txt_descripcion.Size = new System.Drawing.Size(224, 20);
+            this.Txt_descripcion.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 87);
+            this.label2.Location = new System.Drawing.Point(18, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.Size = new System.Drawing.Size(97, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Punto de Venta:";
-            // 
-            // Txt_descripcion
-            // 
-            this.Txt_descripcion.Location = new System.Drawing.Point(145, 87);
-            this.Txt_descripcion.Name = "Txt_descripcion";
-            this.Txt_descripcion.Size = new System.Drawing.Size(318, 20);
-            this.Txt_descripcion.TabIndex = 1;
-            // 
-            // Btn_cancelar
-            // 
-            this.Btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.Btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_cancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Btn_cancelar.Location = new System.Drawing.Point(145, 141);
-            this.Btn_cancelar.Name = "Btn_cancelar";
-            this.Btn_cancelar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_cancelar.TabIndex = 2;
-            this.Btn_cancelar.Text = "Cancelar";
-            this.Btn_cancelar.UseVisualStyleBackColor = false;
-            this.Btn_cancelar.Click += new System.EventHandler(this.Btn_cancelar_Click);
-            // 
-            // Btn_Guardar
-            // 
-            this.Btn_Guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(55)))), ((int)(((byte)(167)))));
-            this.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Guardar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Btn_Guardar.Location = new System.Drawing.Point(258, 141);
-            this.Btn_Guardar.Name = "Btn_Guardar";
-            this.Btn_Guardar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Guardar.TabIndex = 3;
-            this.Btn_Guardar.Text = "Guardar";
-            this.Btn_Guardar.UseVisualStyleBackColor = false;
-            this.Btn_Guardar.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // Btn_Retomar
-            // 
-            this.Btn_Retomar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.Btn_Retomar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Retomar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Btn_Retomar.Location = new System.Drawing.Point(366, 141);
-            this.Btn_Retomar.Name = "Btn_Retomar";
-            this.Btn_Retomar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Retomar.TabIndex = 4;
-            this.Btn_Retomar.Text = "Retornar";
-            this.Btn_Retomar.UseVisualStyleBackColor = false;
-            this.Btn_Retomar.Click += new System.EventHandler(this.Btn_Retornar_Click);
+            this.label2.Text = "Punto de Venta: (*)";
             // 
             // Btn_nuevo
             // 
-            this.Btn_nuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(178)))), ((int)(((byte)(212)))));
-            this.Btn_nuevo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(165)))), ((int)(((byte)(73)))));
+            this.Btn_nuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(246)))), ((int)(((byte)(245)))));
+            this.Btn_nuevo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
             this.Btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_nuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Btn_nuevo.ImageKey = "nuevo.png";
             this.Btn_nuevo.ImageList = this.imageList1;
-            this.Btn_nuevo.Location = new System.Drawing.Point(40, 495);
+            this.Btn_nuevo.Location = new System.Drawing.Point(16, 416);
             this.Btn_nuevo.Name = "Btn_nuevo";
             this.Btn_nuevo.Size = new System.Drawing.Size(75, 60);
             this.Btn_nuevo.TabIndex = 1;
             this.Btn_nuevo.Text = "Nuevo";
             this.Btn_nuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Btn_nuevo.UseVisualStyleBackColor = false;
             this.Btn_nuevo.Click += new System.EventHandler(this.Btn_nuevo_Click);
-            // 
-            // Btn_actualizar
-            // 
-            this.Btn_actualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(178)))), ((int)(((byte)(212)))));
-            this.Btn_actualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(165)))), ((int)(((byte)(73)))));
-            this.Btn_actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_actualizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_actualizar.ImageIndex = 1;
-            this.Btn_actualizar.ImageList = this.imageList1;
-            this.Btn_actualizar.Location = new System.Drawing.Point(149, 495);
-            this.Btn_actualizar.Name = "Btn_actualizar";
-            this.Btn_actualizar.Size = new System.Drawing.Size(75, 60);
-            this.Btn_actualizar.TabIndex = 2;
-            this.Btn_actualizar.Text = "Actualizar";
-            this.Btn_actualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_actualizar.UseVisualStyleBackColor = false;
-            // 
-            // Btn_eliminar
-            // 
-            this.Btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(178)))), ((int)(((byte)(212)))));
-            this.Btn_eliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(165)))), ((int)(((byte)(73)))));
-            this.Btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_eliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_eliminar.ImageKey = "eliminar.png";
-            this.Btn_eliminar.ImageList = this.imageList1;
-            this.Btn_eliminar.Location = new System.Drawing.Point(249, 495);
-            this.Btn_eliminar.Name = "Btn_eliminar";
-            this.Btn_eliminar.Size = new System.Drawing.Size(75, 60);
-            this.Btn_eliminar.TabIndex = 3;
-            this.Btn_eliminar.Text = "Eliminar";
-            this.Btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_eliminar.UseVisualStyleBackColor = false;
-            // 
-            // Btn_reporte
-            // 
-            this.Btn_reporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(178)))), ((int)(((byte)(212)))));
-            this.Btn_reporte.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(165)))), ((int)(((byte)(73)))));
-            this.Btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_reporte.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_reporte.ImageKey = "reporte.png";
-            this.Btn_reporte.ImageList = this.imageList1;
-            this.Btn_reporte.Location = new System.Drawing.Point(354, 495);
-            this.Btn_reporte.Name = "Btn_reporte";
-            this.Btn_reporte.Size = new System.Drawing.Size(75, 60);
-            this.Btn_reporte.TabIndex = 4;
-            this.Btn_reporte.Text = "Reporte";
-            this.Btn_reporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_reporte.UseVisualStyleBackColor = false;
-            // 
-            // Btn_salir
-            // 
-            this.Btn_salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(178)))), ((int)(((byte)(212)))));
-            this.Btn_salir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(165)))), ((int)(((byte)(73)))));
-            this.Btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_salir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_salir.ImageKey = "salir.png";
-            this.Btn_salir.ImageList = this.imageList1;
-            this.Btn_salir.Location = new System.Drawing.Point(450, 495);
-            this.Btn_salir.Name = "Btn_salir";
-            this.Btn_salir.Size = new System.Drawing.Size(75, 60);
-            this.Btn_salir.TabIndex = 5;
-            this.Btn_salir.Text = "Salir";
-            this.Btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_salir.UseVisualStyleBackColor = false;
             // 
             // imageList1
             // 
@@ -283,45 +257,101 @@
             this.imageList1.Images.SetKeyName(3, "reporte.png");
             this.imageList1.Images.SetKeyName(4, "salir.png");
             // 
-            // Pnl_titulo
+            // Btn_actualizar
             // 
-            this.Pnl_titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(14)))), ((int)(((byte)(24)))));
-            this.Pnl_titulo.Controls.Add(this.label3);
-            this.Pnl_titulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Pnl_titulo.Location = new System.Drawing.Point(0, 0);
-            this.Pnl_titulo.Name = "Pnl_titulo";
-            this.Pnl_titulo.Size = new System.Drawing.Size(984, 41);
-            this.Pnl_titulo.TabIndex = 6;
-            this.Pnl_titulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.Btn_actualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(246)))), ((int)(((byte)(245)))));
+            this.Btn_actualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            this.Btn_actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_actualizar.ImageKey = "actualizar.png";
+            this.Btn_actualizar.ImageList = this.imageList1;
+            this.Btn_actualizar.Location = new System.Drawing.Point(97, 416);
+            this.Btn_actualizar.Name = "Btn_actualizar";
+            this.Btn_actualizar.Size = new System.Drawing.Size(75, 60);
+            this.Btn_actualizar.TabIndex = 2;
+            this.Btn_actualizar.Text = "Actualizar";
+            this.Btn_actualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_actualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Btn_actualizar.UseVisualStyleBackColor = false;
+            this.Btn_actualizar.Click += new System.EventHandler(this.Btn_actualizar_Click);
+            // 
+            // Btn_eliminar
+            // 
+            this.Btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(246)))), ((int)(((byte)(245)))));
+            this.Btn_eliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            this.Btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_eliminar.ImageKey = "eliminar.png";
+            this.Btn_eliminar.ImageList = this.imageList1;
+            this.Btn_eliminar.Location = new System.Drawing.Point(178, 416);
+            this.Btn_eliminar.Name = "Btn_eliminar";
+            this.Btn_eliminar.Size = new System.Drawing.Size(75, 60);
+            this.Btn_eliminar.TabIndex = 3;
+            this.Btn_eliminar.Text = "Eliminar";
+            this.Btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Btn_eliminar.UseVisualStyleBackColor = false;
+            this.Btn_eliminar.Click += new System.EventHandler(this.Btn_eliminar_Click);
+            // 
+            // Btn_reporte
+            // 
+            this.Btn_reporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(246)))), ((int)(((byte)(245)))));
+            this.Btn_reporte.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            this.Btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_reporte.ImageKey = "reporte.png";
+            this.Btn_reporte.ImageList = this.imageList1;
+            this.Btn_reporte.Location = new System.Drawing.Point(259, 416);
+            this.Btn_reporte.Name = "Btn_reporte";
+            this.Btn_reporte.Size = new System.Drawing.Size(75, 60);
+            this.Btn_reporte.TabIndex = 4;
+            this.Btn_reporte.Text = "Reporte";
+            this.Btn_reporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_reporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Btn_reporte.UseVisualStyleBackColor = false;
+            this.Btn_reporte.Click += new System.EventHandler(this.Btn_reporte_Click);
+            // 
+            // Btn_salir
+            // 
+            this.Btn_salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(246)))), ((int)(((byte)(245)))));
+            this.Btn_salir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            this.Btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_salir.ImageKey = "salir.png";
+            this.Btn_salir.ImageList = this.imageList1;
+            this.Btn_salir.Location = new System.Drawing.Point(340, 416);
+            this.Btn_salir.Name = "Btn_salir";
+            this.Btn_salir.Size = new System.Drawing.Size(75, 60);
+            this.Btn_salir.TabIndex = 5;
+            this.Btn_salir.Text = "Salir";
+            this.Btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_salir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Btn_salir.UseVisualStyleBackColor = false;
+            this.Btn_salir.Click += new System.EventHandler(this.Btn_salir_Click);
+            // 
+            // Pnl_titulo_form
+            // 
+            this.Pnl_titulo_form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(145)))), ((int)(((byte)(194)))));
+            this.Pnl_titulo_form.Controls.Add(this.label3);
+            this.Pnl_titulo_form.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Pnl_titulo_form.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_titulo_form.Name = "Pnl_titulo_form";
+            this.Pnl_titulo_form.Size = new System.Drawing.Size(984, 40);
+            this.Pnl_titulo_form.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(13, 9);
+            this.label3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(28, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 13);
+            this.label3.Size = new System.Drawing.Size(107, 14);
             this.label3.TabIndex = 0;
             this.label3.Text = "Punto de Venta";
-            // 
-            // Lbl_totalregistro
-            // 
-            this.Lbl_totalregistro.AutoSize = true;
-            this.Lbl_totalregistro.Location = new System.Drawing.Point(392, 310);
-            this.Lbl_totalregistro.Name = "Lbl_totalregistro";
-            this.Lbl_totalregistro.Size = new System.Drawing.Size(96, 13);
-            this.Lbl_totalregistro.TabIndex = 4;
-            this.Lbl_totalregistro.Text = "Total Registgros: 0";
-            this.Lbl_totalregistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Lbl_totalregistro.Click += new System.EventHandler(this.label4_Click);
             // 
             // Frm_Punto_Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.Pnl_titulo);
+            this.Controls.Add(this.Pnl_titulo_form);
             this.Controls.Add(this.Btn_salir);
             this.Controls.Add(this.Btn_reporte);
             this.Controls.Add(this.Btn_eliminar);
@@ -333,13 +363,13 @@
             this.Text = "Frm_Punto_Venta";
             this.Load += new System.EventHandler(this.Frm_Punto_Venta_Load);
             this.Tbc_principal.ResumeLayout(false);
-            this.Consultas.ResumeLayout(false);
-            this.Consultas.PerformLayout();
-            this.Mantenimiento.ResumeLayout(false);
-            this.Mantenimiento.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).EndInit();
-            this.Pnl_titulo.ResumeLayout(false);
-            this.Pnl_titulo.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.Pnl_titulo_form.ResumeLayout(false);
+            this.Pnl_titulo_form.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -347,25 +377,25 @@
         #endregion
 
         private System.Windows.Forms.TabControl Tbc_principal;
-        private System.Windows.Forms.TabPage Consultas;
-        private System.Windows.Forms.TabPage Mantenimiento;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button Btn_buscar;
         private System.Windows.Forms.TextBox Txt_buscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView Dgv_Listado;
-        private System.Windows.Forms.Button Btn_Retomar;
-        private System.Windows.Forms.Button Btn_Guardar;
+        private System.Windows.Forms.Button Btn_retornar;
+        private System.Windows.Forms.Button Btn_guardar;
         private System.Windows.Forms.Button Btn_cancelar;
         private System.Windows.Forms.TextBox Txt_descripcion;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Btn_nuevo;
+        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button Btn_actualizar;
         private System.Windows.Forms.Button Btn_eliminar;
         private System.Windows.Forms.Button Btn_reporte;
         private System.Windows.Forms.Button Btn_salir;
-        private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Panel Pnl_titulo;
+        private System.Windows.Forms.Panel Pnl_titulo_form;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label Lbl_totalregistro;
+        private System.Windows.Forms.Label Lbl_totalregistros;
     }
 }

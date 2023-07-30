@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CC025A16-C80A-4CB1-9C09-DEBDF032212F}</ProjectGuid>
+    <ProjectGuid>{569A17F9-6C68-4F7B-8D75-637B36680815}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sol_Puntoventa.entidades</RootNamespace>
-    <AssemblyName>Sol_Puntoventa.entidades</AssemblyName>
+    <RootNamespace>Sol_PuntoVenta.Entidades</RootNamespace>
+    <AssemblyName>Sol_PuntoVenta.Entidades</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="E_Familias.cs" />
+    <Compile Include="E_Marcas.cs" />
+    <Compile Include="E_Mesas.cs" />
+    <Compile Include="E_Punto_Venta.cs" />
+    <Compile Include="E_SubFamilias.cs" />
+    <Compile Include="E_Unidades_Medidas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

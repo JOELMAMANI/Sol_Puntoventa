@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9721511-DFFF-495E-8B02-596A553B29C1}</ProjectGuid>
+    <ProjectGuid>{530AF22B-4D58-4BBA-A73C-00E4CD5D2E97}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Sol_Puntoventa.Presentacion</RootNamespace>
-    <AssemblyName>Sol_Puntoventa.Presentacion</AssemblyName>
+    <RootNamespace>Sol_PuntoVenta.Presentacion</RootNamespace>
+    <AssemblyName>Sol_PuntoVenta.Presentacion</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +64,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Mesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Mesas.Designer.cs">
+      <DependentUpon>Frm_Mesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SubFamilias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SubFamilias.Designer.cs">
+      <DependentUpon>Frm_SubFamilias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Unidades_Medidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Unidades_Medidas.Designer.cs">
+      <DependentUpon>Frm_Unidades_Medidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Marcas.Designer.cs">
+      <DependentUpon>Frm_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Familias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Familias.Designer.cs">
+      <DependentUpon>Frm_Familias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Punto_Venta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +102,63 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\DataSet_DatosMaestros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_DatosMaestros.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Familias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Familias.Designer.cs">
+      <DependentUpon>Frm_Rpt_Familias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Marcas.Designer.cs">
+      <DependentUpon>Frm_Rpt_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Mesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Mesas.Designer.cs">
+      <DependentUpon>Frm_Rpt_Mesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Punto_Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Punto_Venta.Designer.cs">
+      <DependentUpon>Frm_Rpt_Punto_Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_SubFamilias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_SubFamilias.Designer.cs">
+      <DependentUpon>Frm_Rpt_SubFamilias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Unidades_Medidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Unidades_Medidas.Designer.cs">
+      <DependentUpon>Frm_Rpt_Unidades_Medidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Frm_Mesas.resx">
+      <DependentUpon>Frm_Mesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SubFamilias.resx">
+      <DependentUpon>Frm_SubFamilias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Unidades_Medidas.resx">
+      <DependentUpon>Frm_Unidades_Medidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Marcas.resx">
+      <DependentUpon>Frm_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Familias.resx">
+      <DependentUpon>Frm_Familias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Punto_Venta.resx">
       <DependentUpon>Frm_Punto_Venta.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +171,31 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Familias.resx">
+      <DependentUpon>Frm_Rpt_Familias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Marcas.resx">
+      <DependentUpon>Frm_Rpt_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Mesas.resx">
+      <DependentUpon>Frm_Rpt_Mesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Punto_Venta.resx">
+      <DependentUpon>Frm_Rpt_Punto_Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_SubFamilias.resx">
+      <DependentUpon>Frm_Rpt_SubFamilias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Unidades_Medidas.resx">
+      <DependentUpon>Frm_Rpt_Unidades_Medidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Familias.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Marcas.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Mesas.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Punto_Venta.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_SubFamilias.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Unidades_Medidas.rdlc" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,19 +205,45 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Reportes\DataSet_DatosMaestros.xsc">
+      <DependentUpon>DataSet_DatosMaestros.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet_DatosMaestros.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_DatosMaestros.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DataSet_DatosMaestros.xss">
+      <DependentUpon>DataSet_DatosMaestros.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sol_Puntoventa.entidades\Sol_Puntoventa.entidades.csproj">
-      <Project>{cc025a16-c80a-4cb1-9c09-debdf032212f}</Project>
-      <Name>Sol_Puntoventa.entidades</Name>
+    <ProjectReference Include="..\Sol_PuntoVenta.Entidades\Sol_PuntoVenta.Entidades.csproj">
+      <Project>{569a17f9-6c68-4f7b-8d75-637b36680815}</Project>
+      <Name>Sol_PuntoVenta.Entidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sol_puntoventa.negocio\Sol_puntoventa.negocio.csproj">
-      <Project>{c55efe65-93f6-4c94-b83a-50d48bf67891}</Project>
-      <Name>Sol_puntoventa.negocio</Name>
+    <ProjectReference Include="..\Sol_PuntoVenta.Negocio\Sol_PuntoVenta.Negocio.csproj">
+      <Project>{4a59e610-e029-47d6-a01a-0654725d7d07}</Project>
+      <Name>Sol_PuntoVenta.Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

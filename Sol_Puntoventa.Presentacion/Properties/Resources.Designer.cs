@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sol_Puntoventa.Presentacion.Properties
+namespace Sol_PuntoVenta.Presentacion.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace Sol_Puntoventa.Presentacion.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sol_Puntoventa.Presentacion.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sol_PuntoVenta.Presentacion.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

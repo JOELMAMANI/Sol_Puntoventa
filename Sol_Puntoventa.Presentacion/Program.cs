@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sol_Puntoventa.Presentacion
+namespace Sol_PuntoVenta.Presentacion
 {
     internal static class Program
     {
@@ -12,11 +12,11 @@ namespace Sol_Puntoventa.Presentacion
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
-        static void Main() ////joelllllllllsdsddasdawwww
+        static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Punto_Venta());
+            Application.Run(new Frm_Mesas());
         }
     }
 }
