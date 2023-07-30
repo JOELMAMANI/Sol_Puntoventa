@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Sol_Puntoventa.Entidades;
+usin
 using Sol_Puntoventa.Negocios;
 
 namespace Sol_Puntoventa.Presentacion
