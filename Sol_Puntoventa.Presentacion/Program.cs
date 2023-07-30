@@ -12,11 +12,11 @@ namespace Sol_Puntoventa.Presentacion
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
-        static void Main() ////joelllllllll
+        static void Main() ////joelllllllllsdsddasdawwww
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Frm_Punto_Venta());
         }
     }
 }
